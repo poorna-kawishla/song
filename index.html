@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css" integrity="INTEGRITY_HASH" crossorigin="anonymous" />
+    <title>Univercity Of ABC</title>
+    <link rel="stylesheet" href="Files/css/main.css">
+    <link rel="stylesheet" href="Files/navigation/nav.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="Files/image/logo.png" alt=""></a>
+        <div class="navigation">
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="course.html">Coures</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+
+            </ul>
+
+        </div>
+        <div id="mobnav">
+            <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+        <script src="File/navbar/nav.js"></script>
+
+    </section>
+    <script src="Files/navigation/nav.js"></script>
+
+
+    <section id="hero">
+        <div class="left fade">
+            <div class="left-text">
+                <h1>Welcome to University of ABC</h1>
+            </div>
+
+        </div>
+        <div class="left-btn fade">
+            <a href="blog.html">View Blog</a>
+        </div>
+    </section>
+
+    <section id="creative">
+        <div class="container">
+            <div class="title">
+                <h2 class="fade">Best of last month</h2>
+            </div>
+
+            <div class="row">
+                <div class="art-board fade">
+                    <div class="art fade">
+                        <img src="Files/image/creative (1).jpg" alt="">
+                    </div>
+                    <div class="art fade">
+                        <img src="Files/image/creative (2).jpg" alt="">
+                    </div>
+                    <div class="art fade">
+                        <img src="Files/image/creative (3).jpg" alt="">
+                    </div>
+                    <div class="art fade">
+                        <img src="Files/image/creative (4).jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="event">
+        <div class="title ">
+            <h1> News and event</h1>
+        </div>
+        <div class="center ">
+            <div class="news-1">
+                <a href="#"> <img src="Files/image/event (1).jpg" width="575px" height="100%" alt=""></a>
+            </div>
+
+            <div class="news-2">
+                <a href="#"> <img src="Files/image/event (2).jpg" alt=""></a>
+                <a href="#"> <img src="Files/image/event (4).jpg" alt=""></a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="apply">
+        <div class="container">
+
+            <div class="apply-left">
+                <div class="text">
+                    <h1>Apply University Of ABC</h1>
+                </div>
+                <div class="apply-btn">
+                    <a href="path/to/Application.pdf" download>
+                        <button>Download Application</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="application">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="file-input-container">
+                        <label for="file">Attach Application</label>
+                        <input type="file" id="file" name="file">
+                        <span class="file-name">No file selected</span>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="animation-container">
+                <div class="animation">Form submitted successfully!</div>
+            </div>
+        </div>
+        <script>
+            const form = document.querySelector('form');
+            const fileInput = document.querySelector('#file');
+            const fileName = document.querySelector('.file-name');
+            const animationContainer = document.querySelector('.animation-container');
+            const animation = document.querySelector('.animation');
+            fileInput.addEventListener('change', () => {
+                if (fileInput.files.length > 0) {
+                    fileName.textContent = fileInput.files[0].name;
+                } else {
+                    fileName.textContent = 'No file selected';
+                }
+            });
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                animationContainer.classList.add('active');
+                animation.classList.add('active');
+                setTimeout(() => {
+                    form.submit();
+                }, 2000);
+            });
+        </script>
+    </section>
+
+   
+
+    <footer>
+<div class="top">
+    <div class="col-1">
+        <div class="logo">
+            <img src="Files/image/logo.png" alt="">
+        </div>
+        <div class="col-1-text">
+            <h1>University of abc</h1>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="address">
+            <p>123 street,</p>
+            <p> abc town ,</p>
+            <p> abc country.</p>
+        </div>
+        <div class="email">
+            <p>example@gmail.com</p>
+        </div>
+        <div class="number">
+            <p>+94 077 xxx xxxx</p>
+        </div>
+    </div>
+    <div class="col-3">
+        <ul>
+            <li><a href="#">About</a></li> <br>
+            <li><a href="#">terms and privacy</a></li><br>
+            <li><a href="#">About</a></li><br>
+            <li><a href="#">academic</a></li><br>
+        </ul>
+    </div>
+    <div class="col-4">
+        <ul>
+            <li><a href="#">account</a></li><br>
+            <li><a href="#">sign in</a></li><br>
+            <li><a href="#">sign up</a></li><br>
+            <li><a href="#">academic</a></li><br>
+        </ul>
+    </div>
+    <div class="col-5">
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li><br>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li><br>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li><br>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li><br>
+        </ul>
+    </div>
+</div>
+    </footer>
+    <script src="Files/script/scrolanimation.js"></script>
+</body>
+
+</html>
